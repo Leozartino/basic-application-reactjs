@@ -15,18 +15,30 @@ class Main extends Component {
       repositories: [],
       loading: false,
     };
-
-    this.handleInputChange = this.handleInputChange.bind(this);
-    this.handleSubmit = this.handleSubmit.bind(this);
   }
 
-  handleInputChange(event) {
+  componentDidMount() {
+    const repositories = localStorage.getItem('repositories');
+
+    if (repositories) {
+      this.setState({ repositories: JSON.parse(repositories) });
+    }
+  }
+
+  componentDidUpdate(_, prevState) {
+    const { repositories } = this.state;
+    if (prevState.repositories !== repositories) {
+      localStorage.setItem('repositories', JSON.stringify(repositories));
+    }
+  }
+
+  handleInputChange = event => {
     this.setState({
       newRepo: event.target.value,
     });
-  }
+  };
 
-  async handleSubmit(event) {
+  handleSubmit = async event => {
     event.preventDefault();
 
     this.setState({ loading: true });
@@ -45,7 +57,7 @@ class Main extends Component {
       newRepo: '',
       loading: false,
     });
-  }
+  };
 
   render() {
     const { newRepo, loading, repositories } = this.state;
