@@ -22,12 +22,13 @@ module.exports = {
   },
   plugins: [
     'react',
-    'prettier'
+    'prettier',
+    '@babel/plugin-proposal-class-properties'
   ],
   rules: {
     'prettier/prettier': 'error',
     'react/jsx-filename-extension': ['warn', {extensions: ['.jsx', '.js']}],
     'import/prefer-default-export':'off'
   },
-  "parser": "babel-eslint",
+  'parser': 'babel-eslint',
 };
