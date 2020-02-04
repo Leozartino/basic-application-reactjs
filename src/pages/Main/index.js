@@ -8,8 +8,7 @@ import api from '../../services/api';
 
 import { Container } from '../../components/Container';
 
-import {Form, SubmitButton, List } from './styles';
-
+import { Form, SubmitButton, List } from './styles';
 
 class Main extends Component {
   constructor(props) {

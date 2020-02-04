@@ -1,0 +1,56 @@
+https://pastebin.com/embed_js/HWD8htp2
+
+{
+  "workbench.colorTheme": "1984",
+  "workbench.iconTheme": "material-icon-theme",
+  "editor.minimap.enabled": false,
+  "editor.fontFamily": "Fira Code",
+  "editor.fontLigatures": true,
+  "editor.fontSize": 20,
+  "editor.lineHeight": 24,
+  "editor.formatOnSave": true,
+  "editor.rulers": [
+    80,
+    120
+  ],
+  "editor.tabSize": 2,
+  "editor.renderLineHighlight": "gutter",
+  "eslint.autoFixOnSave": true,
+  "eslint.validate": [
+    {
+      "language": "javascript",
+      "autoFix": true
+    },
+    {
+      "language": "javascriptreact",
+      "autoFix": true
+    },
+    {
+      "language": "typescript",
+      "autoFix": true
+    },
+    {
+      "language": "typescriptreact",
+      "autoFix": true
+    }
+  ],
+  "terminal.integrated.fontSize": 14,
+  "emmet.syntaxProfiles": {
+    "javascript": "jsx"
+  },
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact"
+  },
+  "breadcrumbs.enabled": true,
+  "workbench.sideBar.location": "left",
+  "window.menuBarVisibility": "visible",
+  "workbench.statusBar.visible": true,
+  "window.titleBarStyle": "custom",
+  "sync.gist": "9e2cd03af04934854e021e0258f8623f",
+  "terminal.integrated.rendererType": "dom",
+  "git.enableSmartCommit": true,
+  "git.autofetch": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  }
+}
